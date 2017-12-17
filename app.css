@@ -1,8 +1,11 @@
+.row{
+    height:10px;
+}
 .row div{    
-    width: 6px;
-    height: 6px;
-    margin: 6px;
+    width: 10px;
+    height: 10px;    
     display: inline-block;
+    vertical-align: top;
 }
 
 .row div.inactive{
