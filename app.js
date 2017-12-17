@@ -3,10 +3,30 @@ function getRandomState(){
     return 1;
 }
 
-for(let i=0; i< 101; i++){
+// make the first Row
+for(let i=0; i< 71; i++){
     let div = document.createElement('div');
-    div.classList.add(getRandomState() ? 'active' : 'inactive');    
-    document.querySelector(".cells").appendChild(div);    
+    
+    document.querySelector(".row").appendChild(div);    
 }
 
+function randomizeRow(rowDiv){
+    // makes a row randomize with active or inactive states
+    let rowDivs = rowDiv.childNodes;
+    for(let i=1; i < rowDivs.length; i++){
+        let div = rowDivs[i];
+        div.classList.add(getRandomState() ? 'active' : 'inactive');        
+    }
+}
 
+randomizeRow(document.querySelector(".row"));
+
+function duplicateRow(){
+    // duplicate a row by cloning it
+    let firstRow = document.querySelector(".cells");
+    let clone = firstRow.cloneNode(true);
+    randomizeRow(document.querySelector(".row"));
+    document.querySelector(".cells").appendChild(clone);
+}
+
+duplicateRow();
