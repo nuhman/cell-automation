@@ -2,7 +2,7 @@
 ### a cellular automation simulation in JS  
 ---  
   
-See it in action [here](https://nuhman.github.io/cell-automation).
+See it in action [here](https://nuhman.github.io/cell-automation).  
 From [wikipedia](https://en.wikipedia.org/wiki/Cellular_automaton):  
 > A cellular automaton  is a discrete model studied in computer science, mathematics, physics, complexity science, 
 theoretical biology and microstructure modeling.  
