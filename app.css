@@ -1,0 +1,7 @@
+#cells div{
+    background: #99ff;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    display: inline-block;
+}
