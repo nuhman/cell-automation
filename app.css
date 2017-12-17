@@ -1,7 +1,14 @@
-#cells div{
-    background: #99ff;
-    width: 10px;
-    height: 10px;
-    margin: 10px;
+.cells div{    
+    width: 4px;
+    height: 4px;
+    margin: 4px;
     display: inline-block;
+}
+
+.cells div.inactive{
+    background: red;
+}
+
+.cells div.active{
+    background: #99ff;
 }
